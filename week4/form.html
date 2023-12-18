@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Elements</h1>
+    <form action="https://www.example.com/">
+        <label for="username">Username : </label>
+        <input type="text" name="username"
+        placeholder="Plese input username"
+        size="10"
+        />
+        <br>
+        <label for="password">Password : </label>
+        <input type="password" name="password"
+        placeholder="Plese input password"
+        size="30"
+        />
+        <!--new line-->
+        <br>
+        <label for="email">Email : </label>
+        <input type="text" name="email"
+        placeholder="Plese input email"
+        size="10"
+        />
+        <br>
+        <label for="address">Address : </label>
+        <textarea name="address"cols="30" rows="10"></textarea>
+        <br>
+
+        <label for="gender">Gender : </label>
+        <input type="radio" name="gender" value="Male"/>Male
+        <input type="radio" name="gender" value="Female"/>Female
+        <input type="radio" name="gender" value="LGBTQ"/>LGBTQ+
+        <br/>
+
+        <label for="source">Source : </label>
+        <input type="checkbox" name="internet" value="internet"/>Internet
+        <input type="checkbox" name="friend" value="friend"/>Friend
+        <input type="checkbox" name="radio" value="radio"/>Radio
+        <br/>
+
+        <label for="department">Department : </label>
+        <select name="">
+            <option value="1">IT</option>
+            <option value="2">Chemestry</option>
+            <option value="3">Engineer</option>
+            <option value="4">Environment</option>
+        </select>
+        <br/>
+        <label for="profilepic">Upload File</label>
+        <input type="file" name="profilepic">
+        <br>
+        <label for="bdate">Britday</label>
+        <input type="date" name="bdate">
+        
+        <input type="submit" value="ลงทะเบียน">
+        <input type="reset" value="ยกเลิก">
+    </form>
+</body>
+</html>

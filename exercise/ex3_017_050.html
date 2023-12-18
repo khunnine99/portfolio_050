@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Learninh 3 : form ศิษย์เก่า</title>
+</head>
+<body>
+    <h2>
+    <a href="../exercisee.html">Home</a></h2>
+
+    <h2>ฟอร์มลงทะเบียนศิษย์เก่า IT + IS</h2>
+
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <label for="fullName">ชื่อ-สกุล:</label>
+        <input type="text"  name="fullName"><br>
+
+        <label for="studentID">รหัสนักศึกษา :</label>
+        <input type="text"  name="studentID" size="10"><br>
+
+        <label>เพศ:</label>
+        <input type="radio"  name="gender" value="male">
+        <label for="male">ชาย</label>
+        <input type="radio"  name="gender" value="female">
+        <label for="female">หญิง</label><br>
+
+        <label for="enrollmentYear">ปีการศึกษาเข้าศึกษา :</label>
+        <input type="number"  name="enrollmentYear" size="4"><br>
+
+        <label for="address">ที่อยู่:</label>
+        <textarea id="address" name="address" cols="30" rows="6"></textarea>
+            <br>
+
+        <label for="email">อีเมลล์:</label>
+        <input type="email" name="email" ><br>
+
+        <label for="phone">เบอร์โทรติดต่อ:</label>
+        <input type="tel"  name="phone" ><br>
+
+        <label for="course">ชื่อหลักสูตร :</label>
+        <select id="course" name="course" >
+            <option value="IT">IT</option>
+            <option value="IS">IS</option>
+        </select><br>
+
+        <label for="currentOccupation">อาชีพปัจจุบัน:</label>
+        <input type="text"  name="currentOccupation" ><br>
+
+        <label for="workplace">สถานที่ทำงาน:</label>
+        <input type="text" name="workplace" ><br>
+
+        <label for="jobType">ระบุประเภทงานที่ทำ:</label>
+        <select id="jobType" name="jobType" >
+            <option value="Web Developer">Web Developer</option>
+            <option value="System Analyst">System Analyst</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+        </select><br>
+
+        <label for="profilePicture"> upload รูปถ่ายตนเอง 1 รูป:</label>
+        <input type="file"  name="profilePicture" accept="image/*"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
